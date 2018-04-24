@@ -1,4 +1,4 @@
-﻿using SB_IDE; // Requires reference to SBPlugins.dll
+﻿using SB_Prime; // Requires reference to SBPlugins.dll
 using System;
 using System.Drawing;
 using System.Reflection;
