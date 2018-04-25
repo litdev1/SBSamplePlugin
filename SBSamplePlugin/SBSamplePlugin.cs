@@ -6,7 +6,7 @@ using System.Reflection;
 namespace SBSamplePlugin
 {
     // A simple plugin example
-    // Once it is complied copy just the resulting dll (SBSamplePlugin.dll) to a folder called plugins (sub folder to where SB-IDE.exe is located)
+    // Once it is complied copy just the resulting dll (SBSamplePlugin.dll) to a folder called plugins (sub folder to where SB-Prime.exe is located)
 
     // More than one plugin calss (button) may be added in the one plugin dll (group)
     [SBplugin]
@@ -51,7 +51,7 @@ namespace SBSamplePlugin
         // Choose one the methods below as an action when the plugin button is clicked
 
         // Perform an action for the plugin (text will be the current Small Basic document text)
-        // This method only requires reference to SBPlugins.dll and should remain usable for any future version of SB-IDE
+        // This method only requires reference to SBPlugins.dll and should remain usable for any future version of SB-Prime
         // ONE RUN METHOD REQUIRED
         public static bool Run(string text)
         {
@@ -62,8 +62,8 @@ namespace SBSamplePlugin
         }
 
         // Perform an action for the plugin (text will be the current Small Basic document text)
-        // This method requires references to SBPlugins.dll, SB-IDE.exe and ScintillaNET.dll.  It may require rebuilding for future versions of SB-IDE
-        // While more powerful interaction is possible using this, it can also break SB-IDE - and is generally unsupported
+        // This method requires references to SBPlugins.dll, SB-Prime.exe and ScintillaNET.dll.  It may require rebuilding for future versions of SB-Prime
+        // While more powerful interaction is possible using this, it can also break SB-Prime - and is generally unsupported
         // ONE RUN METHOD REQUIRED
         //public static bool Run(MainWindow mainwindow)
         //{
