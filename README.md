@@ -1,2 +1,2 @@
 # SBSamplePlugin
-Sample for SB-IDE plugin
+Sample for SB-Prime plugin
