@@ -8,7 +8,7 @@ namespace SBSamplePlugin
     // A simple plugin example
     // Once it is complied copy just the resulting dll (SBSamplePlugin.dll) to a folder called plugins (sub folder to where SB-Prime.exe is located)
 
-    // More than one plugin calss (button) may be added in the one plugin dll (group)
+    // More than one plugin class (button) may be added in the one plugin dll (group)
     [SBplugin]
     public static class Plugin1
     {
@@ -48,7 +48,7 @@ namespace SBSamplePlugin
             return "My Sample Plugin";
         }
 
-        // Choose one the methods below as an action when the plugin button is clicked
+        // Choose one of the methods below as an action when the plugin button is clicked
 
         // Perform an action for the plugin (text will be the current Small Basic document text)
         // This method only requires reference to SBPlugins.dll and should remain usable for any future version of SB-Prime
