@@ -53,24 +53,24 @@ namespace SBSamplePlugin
         // Perform an action for the plugin (text will be the current Small Basic document text)
         // This method only requires reference to SBPlugins.dll and should remain usable for any future version of SB-Prime
         // ONE RUN METHOD REQUIRED
-        public static bool Run(string text)
-        {
-            // In this case a simple form displaying the document text
-            Form1 form1 = new Form1(text);
-            form1.ShowDialog();
-            return true;
-        }
-
-        // Perform an action for the plugin (text will be the current Small Basic document text)
-        // This method requires references to SBPlugins.dll, SB-Prime.exe and ScintillaNET.dll.  It may require rebuilding for future versions of SB-Prime
-        // While more powerful interaction is possible using this, it can also break SB-Prime - and is generally unsupported
-        // ONE RUN METHOD REQUIRED
-        //public static bool Run(MainWindow mainwindow)
+        //public static bool Run(string text)
         //{
         //    // In this case a simple form displaying the document text
-        //    Form1 form1 = new Form1(mainwindow.GetActiveDocument().TextArea.Text);
+        //    Form1 form1 = new Form1(text);
         //    form1.ShowDialog();
         //    return true;
         //}
+
+        // Perform an action for the plugin (text will be the current Small Basic document text)
+        // This method requires references to SBPlugins.dll, SB-Prime.exe and Scintilla.NET.dll.  It may require rebuilding for future versions of SB-Prime
+        // While more powerful interaction is possible using this, it can also break SB-Prime - and is generally unsupported
+        // ONE RUN METHOD REQUIRED
+        public static bool Run(MainWindow mainwindow)
+        {
+            // In this case a simple form displaying the document text
+            Form1 form1 = new Form1(mainwindow.GetActiveDocument().TextArea.Text);
+            form1.ShowDialog();
+            return true;
+        }
     }
 }

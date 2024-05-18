@@ -33,8 +33,14 @@
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="SB-Prime">
+      <HintPath>..\..\SB-IDE\SB-Prime\bin\Release\SB-Prime.exe</HintPath>
+    </Reference>
     <Reference Include="SBPlugins">
       <HintPath>..\SBPlugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Scintilla.NET">
+      <HintPath>..\..\SB-IDE\SB-Prime\bin\Release\Scintilla.NET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
